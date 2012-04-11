@@ -24,7 +24,7 @@ fwrite($fp, "\n");
 fwrite($fp, "  this.replacementString = [\n");
 fwrite($fp, " ' <img src=\"', path,\n");
 fwrite($fp, " '\" class=\"memes\" style=\"position:relative; top:2px\" alt=\"', meaning,\n");
-fwrite($fp, " '\" title=\"', meaning, '\" /> \'\n");
+fwrite($fp, " '\" title=\"', meaning, '\" /> '\n");
 fwrite($fp, "  ].join('');\n");
 fwrite($fp, "}\n");
 fwrite($fp, "\n");

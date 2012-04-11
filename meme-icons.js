@@ -4,7 +4,7 @@ plugin.Meme = function(matcher, path, meaning){
   this.replacementString = [
  ' <img src="', path,
  '" class="memes" style="position:relative; top:2px" alt="', meaning,
- '" title="', meaning, '" /> \'
+ '" title="', meaning, '" /> '
   ].join('');
 }
 
