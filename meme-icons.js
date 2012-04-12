@@ -103,3 +103,11 @@ plugin.onMessageInsertion = function(event) {
  element.replace(meme.matcher, meme.replacementString);
   });
 }
+
+plugin.onCommand = function (event) {
+    if (event.command == "memelist") {
+        Talker.getMessageBox().val('');
+        Talker.sendMessage("MEME LIST\n:foreveraloneexcited: :mouthopen: :hehehe: :concentrated: :redeyes: :closeenough: :baww: :concentrated2: :conflictingemotions: :axe: \n:derrrp: :suspicious2: :horror: :happyface: :sidemouth: :newspaperguy: :heckno: :awwyeah: :pffftcchchchhfffttt: :originalrage: \n:somuchwin: :ninja: :foreveralone: :smile2: :newspaperguytear: :infinitodesprecio: :femaleretarded: :likeasir: :megusta: :waitaminute: \n:no: :asiantroll: :excitedtroll: :dudecomeon: :biggrin: :pukerainbows: :suspicious: :smile: :determined: :maximumtrolling: \n:femalefuckyea: :itssomething: :fuckyea: :cerealguy: :melvin: :mentira: :fapfap: :lol: :iamdisappointed: :surprised: \n:femalemilk: :whywithhands: :happy: :rageguy: :originaltroll: :okay: :shocked: :yuno: :femalerage2: :trollface: \n:sadtroll: :prrrr: :challenge: :ewbte2: :femalefapfap: :gtfo: :straightface: :trolldadjump: :femalerage: :pokerface: \n:laughing: :ayfkm: :whynot: :trolldad: :ewbte: :sweaty: :angry: :free: :milk: :thoughtful: \n:motherofgod: :cerealspitting: :femalehappy: ");
+        return false;
+    }
+};
