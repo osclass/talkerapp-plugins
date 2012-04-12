@@ -8,7 +8,7 @@ plugin.Meme = function(matcher, path, meaning){
   ].join('');
 }
 
-var domain = "http://www.yourdomain.com/memes/";
+var domain = "https://github.com/osclass/talkerapp-plugins/raw/master/memes/";
 
 plugin.memes = [
 new plugin.Meme(/(^|\s):foreveraloneexcited:($|\s)/, domain + "foreveraloneexcited.png", "foreveraloneexcited"),
@@ -107,7 +107,7 @@ plugin.onMessageInsertion = function(event) {
 plugin.onCommand = function (event) {
     if (event.command == "memelist") {
         Talker.getMessageBox().val('');
-        Talker.sendMessage("MEME LIST\n:foreveraloneexcited: :mouthopen: :hehehe: :concentrated: :redeyes: :closeenough: :baww: :concentrated2: :conflictingemotions: :axe: \n:derrrp: :suspicious2: :horror: :happyface: :sidemouth: :newspaperguy: :heckno: :awwyeah: :pffftcchchchhfffttt: :originalrage: \n:somuchwin: :ninja: :foreveralone: :smile2: :newspaperguytear: :infinitodesprecio: :femaleretarded: :likeasir: :megusta: :waitaminute: \n:no: :asiantroll: :excitedtroll: :dudecomeon: :biggrin: :pukerainbows: :suspicious: :smile: :determined: :maximumtrolling: \n:femalefuckyea: :itssomething: :fuckyea: :cerealguy: :melvin: :mentira: :fapfap: :lol: :iamdisappointed: :surprised: \n:femalemilk: :whywithhands: :happy: :rageguy: :originaltroll: :okay: :shocked: :yuno: :femalerage2: :trollface: \n:sadtroll: :prrrr: :challenge: :ewbte2: :femalefapfap: :gtfo: :straightface: :trolldadjump: :femalerage: :pokerface: \n:laughing: :ayfkm: :whynot: :trolldad: :ewbte: :sweaty: :angry: :free: :milk: :thoughtful: \n:motherofgod: :cerealspitting: :femalehappy: ");
+        Talker.sendMessage(":foreveraloneexcited: :mouthopen: :hehehe: :concentrated: :redeyes: :closeenough: :baww: :concentrated2: :conflictingemotions: :axe: \n:derrrp: :suspicious2: :horror: :happyface: :sidemouth: :newspaperguy: :heckno: :awwyeah: :pffftcchchchhfffttt: :originalrage: \n:somuchwin: :ninja: :foreveralone: :smile2: :newspaperguytear: :infinitodesprecio: :femaleretarded: :likeasir: :megusta: :waitaminute: \n:no: :asiantroll: :excitedtroll: :dudecomeon: :biggrin: :pukerainbows: :suspicious: :smile: :determined: :maximumtrolling: \n:femalefuckyea: :itssomething: :fuckyea: :cerealguy: :melvin: :mentira: :fapfap: :lol: :iamdisappointed: :surprised: \n:femalemilk: :whywithhands: :happy: :rageguy: :originaltroll: :okay: :shocked: :yuno: :femalerage2: :trollface: \n:sadtroll: :prrrr: :challenge: :ewbte2: :femalefapfap: :gtfo: :straightface: :trolldadjump: :femalerage: :pokerface: \n:laughing: :ayfkm: :whynot: :trolldad: :ewbte: :sweaty: :angry: :free: :milk: :thoughtful: \n:motherofgod: :cerealspitting: :femalehappy: ");
         return false;
     }
 };
