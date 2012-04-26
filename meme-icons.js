@@ -6,6 +6,13 @@ plugin.Meme = function(matcher, path, meaning){
  '" class="memes" style="position:relative; top:2px" alt="', meaning,
  '" title="', meaning, '" /> '
   ].join('');
+
+  this.tableMeme = [
+ ' <img src="', path,
+ '" class="memes" style="position:relative; max-width:50px; max-heigh:50px" alt="', meaning,
+ '" title="', meaning, '" onClick="Talker.sendMessage(\':', meaning,
+ ':\'); $.facebox.close();" /> '
+  ].join('');
 }
 
 var domain = "https://github.com/osclass/talkerapp-plugins/raw/master/memes/";
@@ -31,6 +38,7 @@ new plugin.Meme(/(^|\s):heckno:($|\s)/, domain + "heckno.png", "heckno"),
 new plugin.Meme(/(^|\s):awwyeah:($|\s)/, domain + "awwyeah.png", "awwyeah"),
 new plugin.Meme(/(^|\s):pffftcchchchhfffttt:($|\s)/, domain + "pffftcchchchhfffttt.png", "pffftcchchchhfffttt"),
 new plugin.Meme(/(^|\s):originalrage:($|\s)/, domain + "originalrage.png", "originalrage"),
+new plugin.Meme(/(^|\s)f7u12($|\s)/, domain + "originalrage.png", "originalrage"),
 new plugin.Meme(/(^|\s):somuchwin:($|\s)/, domain + "somuchwin.png", "somuchwin"),
 new plugin.Meme(/(^|\s):ninja:($|\s)/, domain + "ninja.jpg", "ninja"),
 new plugin.Meme(/(^|\s):foreveralone:($|\s)/, domain + "foreveralone.jpg", "foreveralone"),
@@ -107,7 +115,18 @@ plugin.onMessageInsertion = function(event) {
 plugin.onCommand = function (event) {
     if (event.command == "memelist") {
         Talker.getMessageBox().val('');
+        
         Talker.sendMessage(":foreveraloneexcited: :mouthopen: :hehehe: :concentrated: :redeyes: :closeenough: :baww: :concentrated2: :conflictingemotions: :axe: \n:derrrp: :suspicious2: :horror: :happyface: :sidemouth: :newspaperguy: :heckno: :awwyeah: :pffftcchchchhfffttt: :originalrage: \n:somuchwin: :ninja: :foreveralone: :smile2: :newspaperguytear: :infinitodesprecio: :femaleretarded: :likeasir: :megusta: :waitaminute: \n:no: :asiantroll: :excitedtroll: :dudecomeon: :biggrin: :pukerainbows: :suspicious: :smile: :determined: :maximumtrolling: \n:femalefuckyea: :itssomething: :fuckyea: :cerealguy: :melvin: :mentira: :fapfap: :lol: :iamdisappointed: :surprised: \n:femalemilk: :whywithhands: :happy: :rageguy: :originaltroll: :okay: :shocked: :yuno: :femalerage2: :trollface: \n:sadtroll: :prrrr: :challenge: :ewbte2: :femalefapfap: :gtfo: :straightface: :trolldadjump: :femalerage: :pokerface: \n:laughing: :ayfkm: :whynot: :trolldad: :ewbte: :sweaty: :angry: :free: :milk: :thoughtful: \n:motherofgod: :cerealspitting: :femalehappy: ");
+        return false;
+    } else if (event.command == "memebox") {
+        Talker.getMessageBox().val('');
+        var html = '<div style="width:700px;">';
+        for(i = 0; i<plugin.memes.length; i++){
+            html = html + plugin.memes[i].tableMeme;
+        }
+        html = html + '</div>';
+        jQuery.facebox.settings.opacity = 0.4;
+        jQuery.facebox(html);
         return false;
     }
 };
