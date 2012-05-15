@@ -102,10 +102,10 @@ new plugin.Meme(/(^|\s):thoughtful:($|\s)/, domain + "thoughtful.png", "thoughtf
 new plugin.Meme(/(^|\s):motherofgod:($|\s)/, domain + "motherofgod.jpg", "motherofgod"),
 new plugin.Meme(/(^|\s):cerealspitting:($|\s)/, domain + "cerealspitting.png", "cerealspitting"),
 new plugin.Meme(/(^|\s):femalehappy:($|\s)/, domain + "femalehappy.png", "femalehappy"),
-new plugin.Meme(/(^|\s):hehehe:($|\s)/, domain + "ninjahappycry.png", "ninjahappycry"),
-new plugin.Meme(/(^|\s):hehehe:($|\s)/, domain + "hihi.png", "hihi"),
-new plugin.Meme(/(^|\s):hehehe:($|\s)/, domain + "ninjafu.png", "ninjafu"),
-new plugin.Meme(/(^|\s):hehehe:($|\s)/, domain + "ceralninja.png", "ceralninja")
+new plugin.Meme(/(^|\s):ninjahappycry:($|\s)/, domain + "ninjahappycry.png", "ninjahappycry"),
+new plugin.Meme(/(^|\s):hihi:($|\s)/, domain + "hihi.png", "hihi"),
+new plugin.Meme(/(^|\s):ninjafu:($|\s)/, domain + "ninjafu.png", "ninjafu"),
+new plugin.Meme(/(^|\s):ceralninja:($|\s)/, domain + "ceralninja.png", "ceralninja")
 ];
 
 plugin.onMessageInsertion = function(event) {
