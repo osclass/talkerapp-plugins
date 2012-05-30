@@ -104,6 +104,7 @@ new plugin.Meme(/(^|\s):cerealspitting:($|\s)/, domain + "cerealspitting.png", "
 new plugin.Meme(/(^|\s):femalehappy:($|\s)/, domain + "femalehappy.png", "femalehappy"),
 new plugin.Meme(/(^|\s):ninjahappycry:($|\s)/, domain + "ninjahappycry.png", "ninjahappycry"),
 new plugin.Meme(/(^|\s):hihi:($|\s)/, domain + "hihi.png", "hihi"),
+new plugin.Meme(/(^|\s):awesomehihi:($|\s)/, domain + "hihi.gif", "awesomehihi"),
 new plugin.Meme(/(^|\s):ninjafu:($|\s)/, domain + "ninjafu.png", "ninjafu"),
 new plugin.Meme(/(^|\s):ceralninja:($|\s)/, domain + "ceralninja.png", "ceralninja"),
 new plugin.Meme(/(^|\s):ceralninjasplit:($|\s)/, domain + "ceralninjasplit.png", "ceralninjasplit")
